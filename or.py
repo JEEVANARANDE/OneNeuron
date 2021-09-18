@@ -6,10 +6,7 @@ import numpy as np
 
 
 def main(data,eta,epochs,filename,plotfilename):
-    
     df = pd.DataFrame(data)
-
-
     X,y = prepare_data(df)
 
     
@@ -23,7 +20,7 @@ def main(data,eta,epochs,filename,plotfilename):
     save_model(model, filename=filename)
     save_plot(df, plotfilename, model)
 
-if __name__=="__name__":
+if __name__=="__main__":
     
     OR ={
     "x1": [0,0,1,1],
